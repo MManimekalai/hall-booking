@@ -91,6 +91,11 @@ app.get('/customers/:customerName/bookings', (req, res) => {
     res.json(customerBookings);
 });
 
+// for checking
+app.get('/', (req, res) => {
+    res.send("App is working fine!")
+});
+
 // Start the server
 const port = process.env.PORT || 13000;
 app.listen(port, () => {
